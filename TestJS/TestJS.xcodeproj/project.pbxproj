@@ -18,6 +18,9 @@
 		70098B9721807BF800B22078 /* light_illstration.png in Resources */ = {isa = PBXBuildFile; fileRef = 70098B9521807BF800B22078 /* light_illstration.png */; };
 		70098B9821807BF800B22078 /* light_advice.png in Resources */ = {isa = PBXBuildFile; fileRef = 70098B9621807BF800B22078 /* light_advice.png */; };
 		70098B9C2180806C00B22078 /* JSWKWebView.html in Resources */ = {isa = PBXBuildFile; fileRef = 70098B9B2180806C00B22078 /* JSWKWebView.html */; };
+		708FF361219A63DC00D8596E /* MOBDynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 708FF360219A63DC00D8596E /* MOBDynamicViewController.m */; };
+		708FF364219A641C00D8596E /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 708FF362219A641C00D8596E /* index.html */; };
+		708FF365219A641C00D8596E /* WKWebViewText.html in Resources */ = {isa = PBXBuildFile; fileRef = 708FF363219A641C00D8596E /* WKWebViewText.html */; };
 		70985DCD218318DA001661BA /* MOBJSPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70985DCC218318DA001661BA /* MOBJSPostViewController.m */; };
 		70985DCF218318F3001661BA /* JSPost.html in Resources */ = {isa = PBXBuildFile; fileRef = 70985DCE218318F3001661BA /* JSPost.html */; };
 		70D9BAE2218B0E83008747E5 /* MOBJSContextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D9BAE1218B0E83008747E5 /* MOBJSContextVC.m */; };
@@ -41,6 +44,10 @@
 		70098B9521807BF800B22078 /* light_illstration.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_illstration.png; sourceTree = "<group>"; };
 		70098B9621807BF800B22078 /* light_advice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_advice.png; sourceTree = "<group>"; };
 		70098B9B2180806C00B22078 /* JSWKWebView.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = JSWKWebView.html; sourceTree = "<group>"; };
+		708FF35F219A63DC00D8596E /* MOBDynamicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOBDynamicViewController.h; sourceTree = "<group>"; };
+		708FF360219A63DC00D8596E /* MOBDynamicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOBDynamicViewController.m; sourceTree = "<group>"; };
+		708FF362219A641C00D8596E /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		708FF363219A641C00D8596E /* WKWebViewText.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WKWebViewText.html; sourceTree = "<group>"; };
 		70985DCB218318DA001661BA /* MOBJSPostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOBJSPostViewController.h; sourceTree = "<group>"; };
 		70985DCC218318DA001661BA /* MOBJSPostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOBJSPostViewController.m; sourceTree = "<group>"; };
 		70985DCE218318F3001661BA /* JSPost.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JSPost.html; sourceTree = "<group>"; };
@@ -79,6 +86,7 @@
 		70098B79218055D000B22078 /* TestJS */ = {
 			isa = PBXGroup;
 			children = (
+				708FF35E219A632000D8596E /* 动态注入js */,
 				70098B7A218055D000B22078 /* AppDelegate.h */,
 				70098B7B218055D000B22078 /* AppDelegate.m */,
 				70D9BAE0218B0E83008747E5 /* MOBJSContextVC.h */,
@@ -102,6 +110,17 @@
 				70098B9521807BF800B22078 /* light_illstration.png */,
 			);
 			path = TestJS;
+			sourceTree = "<group>";
+		};
+		708FF35E219A632000D8596E /* 动态注入js */ = {
+			isa = PBXGroup;
+			children = (
+				708FF362219A641C00D8596E /* index.html */,
+				708FF363219A641C00D8596E /* WKWebViewText.html */,
+				708FF35F219A63DC00D8596E /* MOBDynamicViewController.h */,
+				708FF360219A63DC00D8596E /* MOBDynamicViewController.m */,
+			);
+			path = "动态注入js";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,8 +183,10 @@
 				70098B87218055D100B22078 /* LaunchScreen.storyboard in Resources */,
 				70985DCF218318F3001661BA /* JSPost.html in Resources */,
 				70D9BAE4218BE97D008747E5 /* JSContext.html in Resources */,
+				708FF365219A641C00D8596E /* WKWebViewText.html in Resources */,
 				70098B84218055D100B22078 /* Assets.xcassets in Resources */,
 				70098B9821807BF800B22078 /* light_advice.png in Resources */,
+				708FF364219A641C00D8596E /* index.html in Resources */,
 				70098B82218055D000B22078 /* Main.storyboard in Resources */,
 				70098B9721807BF800B22078 /* light_illstration.png in Resources */,
 				70098B91218055F100B22078 /* WKWebViewJS.html in Resources */,
@@ -186,6 +207,7 @@
 				70098B8A218055D100B22078 /* main.m in Sources */,
 				70098B7C218055D000B22078 /* AppDelegate.m in Sources */,
 				70098B94218060DA00B22078 /* MOBViewController.m in Sources */,
+				708FF361219A63DC00D8596E /* MOBDynamicViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
